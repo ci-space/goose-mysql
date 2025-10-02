@@ -61,6 +61,7 @@ jobs:
         uses: joutvhu/create-release@v1
         with:
           tag_name: ${{ needs.scan.outputs.goose_version }}
+          name: ${{ needs.scan.outputs.goose_version }}
           on_release_exists: error
           draft: false
           prerelease: false
