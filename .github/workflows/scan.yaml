@@ -68,4 +68,4 @@ jobs:
           body: |
             See the release in the goose repository: https://github.com/pressly/goose/releases/tag/${{ needs.scan.outputs.goose_version }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_RELEASE_USER_TOKEN }}
